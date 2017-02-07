@@ -17,6 +17,7 @@
           Your community health network
         </h2>
       </div>
+      
     </header>
     <div class="content_principal">
     <div class="image_component">
@@ -72,95 +73,112 @@
 
       </div>
     <div class="services_component">
-      <div>
-        <h2>
+      <div class="wrapper-content">
+        <h2 class="color-purple">
           OUR SERVICES
         </h2>
-        <p>
-          At AltaMed we're ready to help you grow healthy with comprehensive health care servicesfor your whole family. Services vary by location.
+        <p class="paragraph_services color-gray">
+          At AltaMed we're ready to help you grow healthy with comprehensive health care services for your whole family.<br>Keep in mind services vary by location.
         </p>
+        <div class="services_content">
         <ul>
           <li>
-            <a>
+            <a href="#" target="_blank">
               Primary Medical and Specialty Care
             </a>
           </li>
 
           <li>
-            <a>
+            <a href="#" target="_blank">
               Women's Health Services
             </a>
           </li>
 
           <li>
-            <a>
+            <a href="#" target="_blank">
               Pedriatics
             </a>
           </li>
 
           <li>
-            <a>
+            <a href="#" target="_blank">
               Dental Services
             </a>
           </li>
 
           <li>
-            <a>
+            <a href="#" target="_blank">
               Senior Services
             </a>
           </li>
 
           <li>
-            <a>
+            <a href="#" target="_blank">
               HIV/AIDS Care
             </a>
           </li>
 
           <li>
-            <a>
+            <a href="#" target="_blank">
               Obesity Prevention
             </a>
           </li>
 
           <li>
-            <a>
+            <a href="#" target="_blank">
               Youth Programs
             </a>
           </li>
 
           <li>
-            <a>
+            <a href="#" target="_blank">
               Health Education
             </a>
           </li>
 
           <li>
-            <a>
+            <a href="#" target="_blank">
               Pharmacy
             </a>
           </li>
 
           <li>
-            <a>
+            <a href="#" target="_blank">
               Urgent Care
             </a>
           </li>
 
           <li>
-            <a>
+            <a href="#" target="_blank">
               Nurse Advice Line
             </a>
           </li>
         </ul>
-
-        <h2>
+        </div>
+        <h2 class="information color-purple">
           Call to learn more 877.462.2582 or visit AltaMed.org
         </h2>
       </div>
+      
 
 
     </div>
+    <div class="map_component">
+      <div id="googleMap" style="width:100%;height:400px;"></div>
 
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRwTuoxaE9-SDF785yblqzNnu1BO1KRng&callback=myMap"></script>
+      
+    </div>
 
   </body>
 </head>
