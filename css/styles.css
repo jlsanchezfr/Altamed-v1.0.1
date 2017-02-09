@@ -4,6 +4,7 @@ body{
   font-family: HelveticaNeue;
 
 }
+/*********************************************************************  @font-face for Helvetica's font Normal   */
 @font-face{
     font-family: HelveticaNeue;
 	
@@ -17,6 +18,8 @@ body{
   font-weight: 400;
   font-style: normal;  
 }
+
+/*********************************************************************  @font-face for HelveticaNeue-Bold   */
 @font-face{
     font-family: HelveticaNeue-Bold;
 	
@@ -30,6 +33,7 @@ body{
   font-weight: 700;
   font-style: normal;  
 }
+/*********************************************************************  @font-face for HelveticaNeue-Medium   */
 @font-face{
     font-family: HelveticaNeue-Medium;
 	
@@ -43,7 +47,7 @@ body{
   font-weight: 500;
   font-style: normal;  
 }
-
+/*********************************************************************  Style for Header component   */
 .header_component{
   background-color: #5d5095;
 }
@@ -64,6 +68,7 @@ body{
 .no-decoration{
   text-decoration:none;
 }
+/********************************************************************* Principal Block  */
 .principal_container{
   width: 100%;
   display: table;
@@ -71,7 +76,7 @@ body{
 .text_component_block{
   display: none;
 }
-
+/*********************************************************************  Style for Title component  */
 .title_component{
   font-family: HelveticaNeue;
   font-size: 28px;
@@ -83,11 +88,13 @@ body{
 .title_component h2{
   font-size: 24px;
 }
+/*********************************************************************  Firs Block  */
 .principal_component{
   width: 100%;
   
   display: table;
 }
+/*********************************************************************  Style for Image component  */
 .image_component{
   background-image: url(../images/background-fullsize.png);
   float: right;
@@ -95,8 +102,7 @@ body{
   background-repeat: no-repeat;
   background-position:right; 
 }
-
-
+/*********************************************************************  Style for .text_component  */
 .text_component{
   margin-top: 140px;
   width: 560px;
@@ -133,15 +139,12 @@ body{
   margin-top: 0px;
 }
 
-.content-paragraph-2{
-  margin-top: 20px;
 
-  float: left;
-}
-.content-principal-2{
-  font-size: 18px;
-  font-weight: 500;
 
+/*********************************************************************  Second block  */
+.content-medium{
+  display: table;
+  width: 100%;
 
 }
 .image_green_block{
@@ -150,127 +153,130 @@ body{
 
 .image_green{
   float: left;
-
+  width: 40%;
+  height: 100%;
 }
-.content-medium{
-  display: table;
+.image_green img{
   width: 100%;
-  float: left;
-
+  margin: 0px;
 }
+
+/*********************************************************************  Style for .info_component  */
+
+
 .info_component{
-  padding-top: 50px;
-  padding-right: 50px;
-  width:50%;
   float: right;
+  padding: 40px 60px;
+  width         : 50%;
+}
+.info_component h2{
+  font-size: 48px;
+  font-family   : HelveticaNeue;
+  margin: 0 auto;
+}
 
+.content-paragraph-2{
+  margin-top: 20px;
 
-  
-  font-family: HelveticaNeue;
-  font-size: 24px;
+  float: left;
+}
+.content-principal-2{
+  font-size: 20px;
+  font-weight: 500;
 }
 li{
-  list-style-position: outside;
-  float: left;
-  padding-left: 20px;
-  list-style-image: url(../images/bullet-circle.png);
+  list-style-position : outside;
+  float               : left;
+  padding-left        : 20px;
+  list-style-image    : url(../images/bullet-circle.png);
 }
 li.p{
   float: left;
 }
 
 .services_component{
-  float:left;
-  text-align: center;
-  width: 100%;
-  margin-left: 300;
-  font-size: 24px;
-  color: #5d5095;
-  margin-bottom: 50px;
-  border-bottom: 5px;
+  float         : left;
+  text-align    : center;
+  width         : 100%;
+  margin-left   : 300;
+  font-size     : 24px;
+  color         : #5d5095;
+  margin-bottom : 50px;
+  border-bottom : 5px;
 }
 .wrapper-content{
-  width: 80%;
-  width: 1240px;
-  margin: 0 auto;
+  width  : 80%;
+  width  : 1240px;
+  margin : 0 auto;
   
 }
 .paragraph_services{
-  
   font-weight: 500;
 }
 .services_component ul{
   line-height: 40px;
 }
 .services_component ul li{
-  width: 300px;
-  color: #005886;
-  text-align: left;
-  list-style: none;
-  background: url(./../images/bullet-circle-3.png);
-  background-repeat: no-repeat;
-  background-position: top 3px left;
-  padding-left: 40px;
-  background-size: 20px 20px;
-  box-sizing: border-box;
-  margin-bottom: 18px;
-  padding-right: 5px;
+  width               : 300px;
+  color               : #005886;
+  text-align          : left;
+  list-style          : none;
+  background          : url(./../images/bullet-circle-3.png);
+  background-repeat   : no-repeat;
+  background-position : top 3px left;
+  padding-left        : 40px;
+  background-size     : 20px 20px;
+  box-sizing          : border-box;
+  margin-bottom       : 18px;
+  padding-right       : 5px;
 }
 
 
 
 .services_content{
-  display: table;
-  width: 100%;
+  display : table;
+  width   : 100%;
 }
 .services_content a{
   color: #0a5984;
   text-decoration: none;
 }
 .list_services li{
-  list-style: none;
-  padding-left: 100px;
-  background:url(../images/bullet-circle-3.png);
-  background-repeat: no-repeat;
-  background-position-x: left;
-  background-position-y: top 3px;
+  list-style            : none;
+  padding-left          : 100px;
+  background            : url(../images/bullet-circle-3.png);
+  background-repeat     : no-repeat;
+  background-position-x : left;
+  background-position-y : top 3px;
 }
 
 .information{
   float: left;
   width: 100%;
 }
-.separation-div{
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  height: 3px;
-  background-color: lightgrey;
-  float: left;
-}
+
 .title-map{
   color: #5d5095;
   font-size: 36px;
   text-align: center;
   font-weight: bold;
 }
-
+/*********************************************************************  Third Block  */
 .map_component{
-  display: table;
-  width: 100%;
-  height: auto;
-  border-top-style: solid;
-  border-top-color: lightgrey;
-  border-top-width: 3px;
+  display          : table;
+  width            : 100%;
+  height           : auto;
+  border-top-style : solid;
+  border-top-color : lightgrey;
+  border-top-width : 3px;
 }
 .map{
-
-  width: 100%;
-  height: 500px;
+  width  : 100%;
+  height : 500px;
 }
 .content-paragraph-block{
-  width: 100%;
-  margin: 0 auto; 
+  width  : 100%;
+  margin : 0 auto;
 }
 .paragraph-block{
   display: none;
@@ -294,8 +300,8 @@ li.p{
 @media only screen and (max-width:1550px){
   .info_component{
   }
-  .image_green img{
-    width: 600px;;
+  .image_green{
+    width: 40%;
   }
 
 }
@@ -310,27 +316,27 @@ li.p{
 
 @media only screen and (max-width:1390px){
   .text_component{
-    margin-left: 4%;
-    margin-top: 4%;
-    width: 500px;
-    margin-bottom: 300px;
+    margin-left   : 4%;
+    margin-top    : 4%;
+    width         : 500px;
+    margin-bottom : 300px;
   }
   .image_green img{
-    width: 500px;
-    height: 447px;
+    width  : 500px;
+    height : 447px;
   }
 }
 @media only screen and (max-width:1310px){
   .text_component{
-    width: 450px;
-    margin-bottom: 200px;
+    width         : 450px;
+    margin-bottom : 200px;
   }
 
 }
 @media only screen and (max-width:1250px){
   .text_component{
-    width: 400px;
-    margin-bottom: 100px;
+    width         : 400px;
+    margin-bottom : 100px;
   }
 
 }
@@ -340,58 +346,77 @@ li.p{
   }
 
 }
+/**************************************************   Media query for mobile dimensions    */
 @media only screen and (max-width:1050px){
   .paragraph-block{
-    display: block;
-    background-color: #5d5095;
-    color: white;
-    padding: 100px;
+    display          : block;
+    background-color : #5d5095;
+    color            : white;
+    padding          : 100px;
+    font-size        : 50px;
+    line-height      : 80px;
+    margin           : 0 auto;
+    font-weight: 100;
+  }
+  .content-paragraph-2{
+    font-family: HelveticaNeue;
     font-size: 50px;
-    line-height: 80px;
-    margin: 0 auto;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 90px;
   }
   .title_component h1{
-    font-size: 125px;
-    font-family: HelveticaNeue;
-    font-weight: 300;
+    font-size   : 125px;
+    font-family : HelveticaNeue;
+    font-weight : 300;
   }
   .title_component h2{
-    font-size: 50px;
-    font-weight: 100;
-    margin-bottom: 60px;
+    font-size     : 50px;
+    font-weight   : 100;
+    margin-bottom : 60px;
   }
   .info_component{
-    float:left;
-    margin-right:0px;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 90%;
+    text-align     : center;
+    padding: 80px 80px 60px 80px;
+    width          : 90%;
+    margin: 0 auto;
+    
+
+  }
+  .info_component li{
+    font-size: 50px;
+    line-height: 90px;
+    text-align: justify;
+  }
+  .info_component h2{
+    font-size: 70px;
+    font-family: HelveticaNeue-Bold;
+    width: 800px;
   }
   .text_component_block{
-    text-align: center;
-    width: 990px;
-    display: block;
-    margin-right: 0px;
-    margin-left: 100px;
-    padding-right: 0px; 
+    text-align    : center;
+    width         : 990px;
+    display       : block;
+    margin-right  : 0px;
+    margin-left   : 100px;
+    padding-right : 0px;
   }
   .text_component_block h3{
-    font-size: 125px;
-    font-weight: 100;
-    margin-bottom: 20px;
+    font-size     : 125px;
+    font-weight   : 100;
+    margin-bottom : 20px;
   }
   .text_component_block h2{
-    font-size: 120px;
-    margin-top: 0px;
-    font-family: HelveticaNeue-Bold;
+    font-size   : 120px;
+    margin-top  : 0px;
+    font-family : HelveticaNeue-Bold;
    
   }
   .image_component{
-    background-image:url('../images/background-fullsize-mobile.png');
-    width: 100%;
-    height: 1100px;
-    background-size: 100%;
+    background-image : url('../images/background-fullsize-mobile.png');
+    width            : 100%;
+    height           : 1100px;
+    background-size  : 100%;
   }
   .text_component{
     display: none;
@@ -399,11 +424,13 @@ li.p{
   .image_green img{
     display:none;
   }
+  .image_green_block{
+    display : block;
+    width   : 100%;
+    height  : 100%;
+  }
   .image_green_block img{
-    display: block;
     width: 100%;
-    height: 1000px;
-    
   }
 }
 
