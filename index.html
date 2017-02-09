@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <body>
+    <div class="principal_container">
     <header class="header_component color-white">
       <div class="title_component">
         <h1>
@@ -16,13 +17,11 @@
         <h2>
           Your community health network
         </h2>
-      </div>
-      
+      </div>      
     </header>
-    <div class="content_principal">
-    <div class="image_component">
-      <div>
-      <div class="text_component color-purple">
+   
+    <div class="principal_component">
+      <div class="text_component_block color-purple">
       <h3>
         We're here to help you
       </h3>
@@ -30,13 +29,33 @@
         <strong>GROW HEALTHY.</strong>
       </h2>
       </div>
-        <div class="content-paragraph">
+    <div class="image_component">
+      
+      <div class="text_component color-purple">
+      <h3>
+        We're here to help you
+      </h3>
+      <h2>
+        <strong>GROW HEALTHY.</strong>
+      </h2>
+      <div class="content-paragraph">
         <p class="paragraph text-purple">A healthy life takes time. It also takes a team of doctors committed  to you for the long run. AltaMed's care  focuses on prevention and wellness to help you and your loved ones <strong>grow healthy.</strong></p>
         </div>
       </div>
+        
+     
     </div>
     </div>
+    <div class="content-paragraph-block">
+        <p class="paragraph-block text-purple">A healthy life takes time. It also takes a team of doctors committed  to you for the long run. AltaMed's care  focuses on prevention and wellness to help you and your loved ones <strong>grow healthy.</strong></p>
+        </div>
+    
+    
     <div class="content-medium">
+      <div class="image_green_block">
+        <img src="images/img-green-mobile.png">
+      </div>
+      
       <div class="image_green">
         <img src="images/img-green.png">
       </div>
@@ -161,19 +180,18 @@
         </h2>
       </div>
     </div>
-    <div class="separation-div">  
-    </div>
     <div class="map_component">
       <h2 class="title-map">
         FIND YOUR NEAREST ALTAMED LOCATION:
       </h2>
-      <div id="googleMap" style="width:100%;height:400px;"></div>
+      <div class="map" id="googleMap"></div>
 
 <script>
 function myMap() {
 var mapProp= {
     center:new google.maps.LatLng(51.508742,-0.120850),
     zoom:5,
+    scrollwheel:false
 };
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
@@ -181,6 +199,7 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRwTuoxaE9-SDF785yblqzNnu1BO1KRng&callback=myMap"></script>
       
+    </div>
     </div>
 
   </body>
