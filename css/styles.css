@@ -98,9 +98,8 @@ body{
 
 
 .text_component{
-  font-family: HelveticaNeue;
   margin-top: 140px;
-  width: 540px;
+  width: 560px;
   margin-left: 20%;
   margin-bottom: 364px;
  
@@ -108,15 +107,18 @@ body{
 }
 
 .text_component h2{
-  font-size: 48px;
+  font-size: 60px;
   margin-top: 0px;
   text-align: center;
+  font-family: HelveticaNeue-Bold;
+  word-spacing: -2px;
+  letter-spacing: -1px;
 }
+
 .text_component h3{
   margin-bottom: 0px;
-}
-.text_component h3{
-  font-size: 44px;
+  font-size: 55px;
+  font-family: HelveticaNeue;
   font-weight: 100;
   text-align: center;
 
@@ -268,7 +270,7 @@ li.p{
 }
 .content-paragraph-block{
   width: 100%;
-  color: purple;  
+  margin: 0 auto; 
 }
 .paragraph-block{
   display: none;
@@ -311,24 +313,48 @@ li.p{
     margin-left: 4%;
     margin-top: 4%;
     width: 500px;
+    margin-bottom: 300px;
   }
   .image_green img{
     width: 500px;
     height: 447px;
   }
 }
-@media only screen and (max-width:1270px){
+@media only screen and (max-width:1310px){
   .text_component{
     width: 450px;
+    margin-bottom: 200px;
+  }
+
+}
+@media only screen and (max-width:1250px){
+  .text_component{
+    width: 400px;
+    margin-bottom: 100px;
+  }
+
+}
+@media only screen and (max-width:1150px){
+  .text_component{
+    width: 300px;
   }
 
 }
 @media only screen and (max-width:1050px){
   .paragraph-block{
-    display: table-cell;
+    display: block;
     background-color: #5d5095;
     color: white;
-    padding: 0px;
+    padding: 70px;
+    font-size: 50px;
+    margin: 0 auto;
+  }
+  .title_component h1{
+    font-size: 88px;
+  }
+  .title_component h2{
+    font-size: 40px;
+    font-weight: 100;
   }
   .info_component{
     float:left;
@@ -340,26 +366,28 @@ li.p{
   }
   .text_component_block{
     text-align: center;
-    width: 680px;
+    width: 990px;
     display: block;
     margin-right: 0px;
+    margin-left: 100px;
     padding-right: 0px; 
-   
-
   }
   .text_component_block h3{
-    font-size: 84px;
+    font-size: 125px;
     font-weight: 100;
     margin-bottom: 20px;
   }
   .text_component_block h2{
-    font-size: 84px;
+    font-size: 120px;
     margin-top: 0px;
+    font-family: HelveticaNeue-Bold;
    
   }
   .image_component{
-    background-image: url('../images/background-fullsize-mobile');
+    background-image:url('../images/background-fullsize-mobile.png');
     width: 100%;
+    height: 1100px;
+    background-size: 100%;
   }
   .text_component{
     display: none;
@@ -369,6 +397,8 @@ li.p{
   }
   .image_green_block img{
     display: block;
+    width: 100%;
+    height: 1000px;
     
   }
 }
