@@ -108,8 +108,6 @@ body{
   width: 560px;
   margin-left: 20%;
   margin-bottom: 290px;
- 
-
 }
 
 .text_component h2{
@@ -153,7 +151,7 @@ body{
 
 .image_green{
   float: left;
-  width: 40%;
+  width: 35%;
   height: 100%;
 }
 .image_green img{
@@ -170,7 +168,7 @@ body{
   width         : 50%;
 }
 .info_component h2{
-  font-size: 48px;
+  font-size: 40px;
   font-family   : HelveticaNeue;
   margin: 0 auto;
 }
@@ -181,8 +179,8 @@ body{
   float: left;
 }
 .content-principal-2{
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 300;
 }
 li{
   list-style-position : outside;
@@ -193,31 +191,46 @@ li{
 li.p{
   float: left;
 }
-
+/*********************************************************************  Third Block  */
 .services_component{
-  float         : left;
+  display: table;
+  width: 100%;
   text-align    : center;
-  width         : 100%;
-  margin-left   : 300;
   font-size     : 24px;
   color         : #5d5095;
   margin-bottom : 50px;
   border-bottom : 5px;
 }
 .wrapper-content{
-  width  : 80%;
-  width  : 1240px;
+  width  : 100%;
   margin : 0 auto;
   
 }
 .paragraph_services{
+  text-align: center;
   font-weight: 500;
 }
 .services_component ul{
   line-height: 40px;
+  width: 400px;
+  float: left;
+}
+.second_list ul li{
+  width: 300px;
+}
+.third_list ul li{
+  width: 300px;
+}
+.first_list ul li{
+  width: 380px;
+}
+.services_content{
+  width: 100%;
+  display: table;
+  float: none;
 }
 .services_component ul li{
-  width               : 300px;
+
   color               : #005886;
   text-align          : left;
   list-style          : none;
@@ -225,6 +238,7 @@ li.p{
   background-repeat   : no-repeat;
   background-position : top 3px left;
   padding-left        : 40px;
+  line-height: 30px;
   background-size     : 20px 20px;
   box-sizing          : border-box;
   margin-bottom       : 18px;
@@ -232,12 +246,12 @@ li.p{
 }
 
 
-
 .services_content{
-  display : table;
-  width   : 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: table;
 }
-.services_content a{
+.first_list a,.second_list a, .third_list a{
   color: #0a5984;
   text-decoration: none;
 }
@@ -261,7 +275,7 @@ li.p{
   text-align: center;
   font-weight: bold;
 }
-/*********************************************************************  Third Block  */
+
 .map_component{
   display          : table;
   width            : 100%;
@@ -335,14 +349,20 @@ li.p{
 }
 @media only screen and (max-width:1250px){
   .text_component{
-    width         : 400px;
+    width         : 380px;
     margin-bottom : 100px;
+  }
+  .image_green , .image_green img{
+    width:450px;
   }
 
 }
 @media only screen and (max-width:1150px){
   .text_component{
     width: 300px;
+  }
+  .image_green{
+    width:400px;
   }
 
 }
@@ -415,7 +435,7 @@ li.p{
   .image_component{
     background-image : url('../images/background-fullsize-mobile.png');
     width            : 100%;
-    height           : 1100px;
+    height           : 990px;
     background-size  : 100%;
   }
   .text_component{
@@ -432,6 +452,49 @@ li.p{
   .image_green_block img{
     width: 100%;
   }
+  .services_component h2{
+    font-size: 70px;
+  }
+  .services_component p{
+    font-size: 50px;
+  }
+  .services_component .services_content{
+    display    : table;
+    margin     : 0 auto;
+    text-align : center;
+    width      : 100%;
+  
+  }
+
+  .services_content ul{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .services_content ul li{
+    line-height: 70px;
+    width: 100%;
+  }
+  .first_list, .second_list, .third_list{
+    text-align: center;
+    display: table;
+   
+
+  }
+  .first_list a,.second_list a, .third_list a{
+    font-size: 50px;  
+  }
+  .services_component h2{
+    text-align: center;
+    max-width: 650px;
+    margin: 40px auto;
+    float: none;
+  }
+  .map_component h2{
+    max-width: 700px;
+    font-size: 70px;
+    margin: 0 auto;
+  }
+  
 }
 
 
