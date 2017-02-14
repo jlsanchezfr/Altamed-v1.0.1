@@ -11,12 +11,7 @@
     <div class="principal_container">
     <header class="header_component color-white">
       <div class="title_component">
-        <h1>
-          AltaMed
-        </h1>
-        <h2>
-          Your community health network
-        </h2>
+        
       </div>      
     </header>
    
@@ -183,23 +178,29 @@
           </li>
         </ul>
         </div>
-        <h2 class="information color-purple">
+      </div>
+      <h2 class="information color-purple">
           Call to learn more 877.462.2582 or visit <a href="#" class="color-purple no-decoration">AltaMed.org</a>
         </h2>
-      </div>
     </div>
     </div>
     <div class="map_component">
       <h2 class="title-map">
         FIND YOUR NEAREST ALTAMED LOCATION:
       </h2>
+      <div class="search_component">
+        <h2>
+          Search by City or Zip Code
+        </h2>
+      </div>
       <div class="map" id="googleMap"></div>
 
 <script>
 function myMap() {
 var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
+    center:new google.maps.LatLng(21.4788343,-104.8661372),
+    zoom:17,
+    
     scrollwheel:false
 };
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
