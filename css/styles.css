@@ -9,7 +9,7 @@ body{
     font-family: HelveticaNeue;
 	
   src: url('../fonts/HelveticaNeue.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/HelveticaNeue.eot?#iefix') , /* IE6-IE8 */
+  src: url('../fonts/HelveticaNeue.eot') , /* IE6-IE8 */
        url('../fonts/HelveticaNeue.otf') , /* Open Type Font */
        url('../fonts/HelveticaNeue.svg') , /* Legacy iOS */
        url('../fonts/HelveticaNeue.ttf') , /* Safari, Android, iOS */
@@ -24,7 +24,7 @@ body{
     font-family: HelveticaNeue-Bold;
 	
   src: url('../fonts/HelveticaNeue-Bold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/HelveticaNeue-Bold.eot?#iefix') , /* IE6-IE8 */
+  src: url('../fonts/HelveticaNeue-Bold.eot') , /* IE6-IE8 */
        url('../fonts/HelveticaNeue-Bold.otf') , /* Open Type Font */
        url('../fonts/HelveticaNeue-Bold.svg') , /* Legacy iOS */
        url('../fonts/HelveticaNeue-Bold.ttf') , /* Safari, Android, iOS */
@@ -37,8 +37,8 @@ body{
 @font-face{
     font-family: HelveticaNeue-Medium;
 	
-  src: url('../fonts/HelveticaNeue-Medium.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/HelveticaNeue-Medium.eot?#iefix') , /* IE6-IE8 */
+  src: url('../fonts/HelveticaNeue-Medium.eot'); /* IE9 Compat Modes ?#iefix */
+  src: url('../fonts/HelveticaNeue-Medium.eot') , /* IE6-IE8 */
        url('../fonts/HelveticaNeue-Medium.otf') , /* Open Type Font */
        url('../fonts/HelveticaNeue-Medium.svg') , /* Legacy iOS */
        url('../fonts/HelveticaNeue-Medium.ttf') , /* Safari, Android, iOS */
@@ -50,6 +50,7 @@ body{
 /*********************************************************************  Style for Header component   */
 .header_component{
   background-color: #5d5095;
+  padding: 20px 100px 20px 100px;
 }
 .color-white{
   color: white;
@@ -78,12 +79,13 @@ body{
 }
 /*********************************************************************  Style for Title component  */
 .title_component{
-  font-family: HelveticaNeue;
-  font-size: 28px;
-  margin-left: 80px;
-  line-height: 5px;
-  padding-top: 25px;
-  padding-bottom: 16px;
+  background: url("./../images/logo.png");
+  width: 400px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: left;
+  display: table;
+  height: 100px;
 }
 .title_component h2{
   font-size: 24px;
@@ -164,19 +166,21 @@ body{
 
 .info_component{
   float: right;
-  padding: 40px 60px;
+  padding: 30px 60px;
+  margin: 0 auto;
   width         : 50%;
+  text-align: justify;
+
 }
 .info_component h2{
   font-size: 40px;
   font-family   : HelveticaNeue;
   margin: 0 auto;
+  text-align: center;
 }
 
 .content-paragraph-2{
   margin-top: 20px;
-
-  float: left;
 }
 .content-principal-2{
   font-size: 18px;
@@ -194,40 +198,63 @@ li.p{
 /*********************************************************************  Third Block  */
 .services_component{
   display: table;
-  width: 100%;
-  text-align    : center;
+  margin: 0 auto;
+  padding: 40px 50px 40px 50px;
+  text-align: center;
   font-size     : 24px;
   color         : #5d5095;
-  margin-bottom : 50px;
   border-bottom : 5px;
 }
 .wrapper-content{
-  width  : 100%;
-  margin : 0 auto;
+
   
 }
 .paragraph_services{
   text-align: center;
   font-weight: 500;
 }
+.services_content{
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+
+}
 .services_component ul{
+  margin: 50px 0px;
   line-height: 40px;
-  width: 400px;
+  width: 370px;
   float: left;
 }
+.first_list{
+  width: 30.33%;
+  display: table;
+  float: left;
+}
+.second_list{
+  width: 30.33%;
+  display: table;
+  float: left;
+}
+.third_list{
+  width: 28.33%;
+  display: table;
+  float: left;
+}
+
+.third_list ul{
+  width: 240px;
+}
+.second_list ul{
+  width: 250px;
+}
 .second_list ul li{
-  width: 300px;
+  width: 250px;
 }
 .third_list ul li{
-  width: 300px;
+  width: 240px;
 }
 .first_list ul li{
-  width: 380px;
-}
-.services_content{
-  width: 100%;
-  display: table;
-  float: none;
+  width: 371px;
 }
 .services_component ul li{
 
@@ -244,35 +271,21 @@ li.p{
   margin-bottom       : 18px;
   padding-right       : 5px;
 }
-
-
-.services_content{
-  width: 100%;
-  margin: 0 auto;
-  display: table;
-}
 .first_list a,.second_list a, .third_list a{
   color: #0a5984;
   text-decoration: none;
 }
-.list_services li{
-  list-style            : none;
-  padding-left          : 100px;
-  background            : url(../images/bullet-circle-3.png);
-  background-repeat     : no-repeat;
-  background-position-x : left;
-  background-position-y : top 3px;
-}
 
 .information{
-  float: left;
+  margin: 0 auto;
   width: 100%;
+  float: left;
 }
 
 .title-map{
   color: #5d5095;
-  font-size: 36px;
   text-align: center;
+  font-size: 36px;
   font-weight: bold;
 }
 
@@ -355,11 +368,29 @@ li.p{
   .image_green , .image_green img{
     width:450px;
   }
+  .text_component h2{
+    margin-bottom: 20px;
+  }
 
+}
+@media only screen and (max-width:1180px){
+    .third_list ul{
+      padding-left: 0px;
+    }
+    .third_list{
+      width: 280px;
+    }
+    .first_list ul{
+      padding-left: 0px;
+    }
+    .text_component{
+      margin-left: 20px;
+    }
 }
 @media only screen and (max-width:1150px){
   .text_component{
     width: 300px;
+    margin-left: 10px;
   }
   .image_green{
     width:400px;
@@ -368,6 +399,18 @@ li.p{
 }
 /**************************************************   Media query for mobile dimensions    */
 @media only screen and (max-width:1050px){
+  .title_component{
+    background: url("./../images/logo.png");
+    width:650px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: table;
+    height: 220px;
+  }
+  .header_component{
+    padding-left: 30px;
+  }
   .paragraph-block{
     display          : block;
     background-color : #5d5095;
@@ -396,10 +439,11 @@ li.p{
     margin-bottom : 60px;
   }
   .info_component{
-    text-align     : center;
-    padding: 80px 80px 60px 80px;
-    width          : 90%;
-    margin: 0 auto;
+    float: none;
+    display: table;
+    width: 80%;
+    padding: 40px 50px 40px 70px;
+ 
     
 
   }
@@ -410,15 +454,18 @@ li.p{
   }
   .info_component h2{
     font-size: 70px;
+    
     font-family: HelveticaNeue-Bold;
-    width: 800px;
+  }
+  .paragraph_services{
+    margin-bottom: 100px;
   }
   .text_component_block{
     text-align    : center;
     width         : 990px;
-    display       : block;
+    display       : table;
     margin-right  : 0px;
-    margin-left   : 100px;
+    margin-left   : 40px;
     padding-right : 0px;
   }
   .text_component_block h3{
@@ -435,7 +482,7 @@ li.p{
   .image_component{
     background-image : url('../images/background-fullsize-mobile.png');
     width            : 100%;
-    height           : 990px;
+    height           : 900px;
     background-size  : 100%;
   }
   .text_component{
@@ -452,23 +499,57 @@ li.p{
   .image_green_block img{
     width: 100%;
   }
-  .services_component h2{
-    font-size: 70px;
+  .services_component{
+    padding: 40px 70px 40px 90px;
   }
+  .services_component ul li{
+    background: url("./../images/bullet-circle-3-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    padding-left: 70px;
+    background-position: top 15px left; 
+  }
+  
   .services_component p{
     font-size: 50px;
   }
   .services_component .services_content{
     display    : table;
     margin     : 0 auto;
-    text-align : center;
     width      : 100%;
   
   }
-
-  .services_content ul{
-    width: 70%;
+  /*       SERVICES LIST      */
+  .first_list{
     margin: 0 auto;
+    width: 100%;
+}
+  .second_list{
+    width: 100%;
+}
+  .third_list{
+    width: 100%;
+}
+
+  .third_list ul{
+    width: 240px;
+}
+  .second_list ul{
+    width: 250px;
+    padding-left: 0px;
+}
+  .second_list ul li{
+    width: 250px;
+}
+  .third_list ul li{
+    width: 240px;
+}
+  .first_list ul li{
+    width: 371px;
+}
+  .services_content ul{
+    margin: 0 auto;
+    width: 100%;
   }
   .services_content ul li{
     line-height: 70px;
@@ -483,16 +564,23 @@ li.p{
   .first_list a,.second_list a, .third_list a{
     font-size: 50px;  
   }
+  .information{
+    margin: 0 auto;
+  width: 100%;
+  float: left;
+  }
   .services_component h2{
+    font-size: 70px;
     text-align: center;
     max-width: 650px;
-    margin: 40px auto;
+    margin: 70px auto;
     float: none;
   }
   .map_component h2{
+    background: 
     max-width: 700px;
     font-size: 70px;
-    margin: 0 auto;
+    margin: 80px auto;
   }
   
 }
