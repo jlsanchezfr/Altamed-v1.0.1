@@ -469,10 +469,22 @@ li.p{
     width               : 650px;
     background-size     : 100%;
     background-repeat   : no-repeat;
-    background-position : left;
+    background-position : top;
     display             : table;
     height              : 220px;
   }
+  li{
+    list-style: none;
+  float               : left;
+  padding-left        : 40px;
+  padding-top: 0px;
+  background: url('./../images/bullet-circle-mobile.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-position-y: 40px; 
+  background-size: 12px;
+  
+}
   .header_component{
     padding-left: 30px;
   }
@@ -557,6 +569,10 @@ li.p{
   .image_green img{
     display:none;
   }
+  .image_green{
+    display: none;
+  }
+  
   .image_green_block{
     display : block;
     width   : 100%;
