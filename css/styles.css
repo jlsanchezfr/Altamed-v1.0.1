@@ -299,7 +299,7 @@ li.p{
 }
 .map{
   width  : 100%;
-  height : 500px;
+  height : 800px;
 }
 .content-paragraph-block{
   width  : 100%;
@@ -308,7 +308,43 @@ li.p{
 .paragraph-block{
   display: none;
 }
+  .map_component h2{
+    margin: 50px auto;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+  }
 
+ .search_component{
+    color: white;
+    margin: 0 auto;
+    background-color: #5d5095;
+    padding: 40px 20px 40px 20px;
+    
+    
+  }
+  .map_component .search_component h2{
+    font-family: HelveticaNeue;
+    font-weight: 100;
+    text-align: center;
+    display: table;
+    padding-left: 60px;
+    margin: 0 auto;
+    background: url('./../images/search-fullsize.png');
+    
+    background-repeat: no-repeat;
+  }
+  .copyright_component{
+    margin: 0px;
+  }
+  .copyright_component h2{
+    text-align: center;
+    color: #576770;
+    margin: 55px auto;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+
+
+  }
 
 
 @media only screen and (max-width:1679px){
@@ -441,8 +477,8 @@ li.p{
   .info_component{
     float: none;
     display: table;
-    width: 80%;
-    padding: 40px 50px 40px 70px;
+    width: 85%;
+    padding: 80px 50px 40px 50px;
  
     
 
@@ -462,19 +498,19 @@ li.p{
   }
   .text_component_block{
     text-align    : center;
-    width         : 990px;
     display       : table;
     margin-right  : 0px;
-    margin-left   : 40px;
+    margin-left   : 0px;
     padding-right : 0px;
+    min-width: 823px;
   }
   .text_component_block h3{
-    font-size     : 125px;
+    font-size     : 110px;
     font-weight   : 100;
     margin-bottom : 20px;
   }
   .text_component_block h2{
-    font-size   : 120px;
+    font-size   : 100px;
     margin-top  : 0px;
     font-family : HelveticaNeue-Bold;
    
@@ -483,6 +519,7 @@ li.p{
     background-image : url('../images/background-fullsize-mobile.png');
     width            : 100%;
     height           : 900px;
+    min-width: 990px;
     background-size  : 100%;
   }
   .text_component{
@@ -576,11 +613,40 @@ li.p{
     margin: 70px auto;
     float: none;
   }
+  .map{
+  width  : 100%;
+  height : 1145px;
+}
   .map_component h2{
-    background: 
     max-width: 700px;
     font-size: 70px;
     margin: 80px auto;
+  }
+  .search_component{
+    color: white;
+    background-color: #5d5095;
+    padding: 80px 20px 80px 20px;
+  }
+  .map_component .search_component h2{
+    font-family: HelveticaNeue;
+    font-weight: 100;
+    font-size: 50px;
+    margin: 0px 30px;
+    background: url('./../images/search-mobile.png');
+    background-repeat: no-repeat;
+    padding-left: 100px;  
+  }
+  .copyright_component{
+    margin: 0px;
+  }
+  .copyright_component h2{
+    text-align: center;
+    color: #576770;
+    margin: 55px auto;
+    font-family: HelveticaNeue;
+    font-size: 30px;
+
+
   }
   
 }
