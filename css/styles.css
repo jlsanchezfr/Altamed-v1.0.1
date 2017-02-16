@@ -687,6 +687,10 @@ li.p{
   }
   .popup_menu .option{
     padding: 50px 30px 50px 60px;
+    border-top-style : solid;
+    border-top-color : lightgrey;
+    border-top-width : 3px;
+    
     
   }
   .popup_menu .name{  
