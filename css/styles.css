@@ -682,24 +682,92 @@ li.p{
   .popup_menu{
     background-color: white;
     color: #576770;
-    padding: 30px 30px 30px 60px;
+    
    
   }
-  .popup_menu .name{
+  .popup_menu .option{
+    padding: 50px 30px 50px 60px;
+    
+  }
+  .popup_menu .name{  
     margin-top: 20px ;
     font-size: 50px;
-    padding-left: 60px;
-    background: url('./../images/option-1.png');
-    background-repeat: no-repeat;
-    background-position: left;
-    background-position-y: 10px; 
-    margin: 0 auto;
+    line-height: 70px;
+    font-weight: bold;
+    padding-left: 120px;
+
+
   }
   .popup_menu .value{
     font-family: HelveticaNeue;
     font-size: 30px;
-    padding-left: 60px;
+    padding-left: 120px;
     padding-right: 30px;
+  }
+  .one{
+    background: url('./../images/option-1.png');
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 30px;
+  }
+  .two{
+    background: url('./../images/option-2.png');
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 30px;
+  }
+  .three{
+    background: url('./../images/option-3.png');
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 30px;
+  }
+  .tab_menu{
+    width: 100%;
+    display: table;
+  }
+  .tab_menu a{
+    color: #576770;
+    font-size: 30px;
+    font-family: HelveticaNeue-Bold;
+  }
+  .tab_menu ul{
+    margin: 0 auto;
+
+
+  }
+  .tab_menu ul li{
+    width: 10%;
+    text-align: center;
+    list-style: none;
+    background: no-repeat;
+    padding: 20px 10px 10px 10px;
+  }
+  .image-left{
+    background: no-repeat;
+  }
+  .tab_menu .arrow-left{
+    width: 140px;
+    height: 80px;
+    float: left;
+    margin: 0 auto;
+    background: url('./../images/arrow-left-mobile.png');
+    background-color: #0eafc0;
+    background-repeat: no-repeat;
+    background-position: center;
+  } 
+  .tab_menu .arrow-right{
+    width: 140px;
+    height: 80px;
+    float: right;
+    
+    background: url('./../images/arrow-right-mobile.png');
+    background-color: #0eafc0;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .map_component .search_component .input{
     font-family       : HelveticaNeue;
