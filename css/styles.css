@@ -315,18 +315,25 @@ li.p{
     margin           : 0 auto;
     background-color : #5d5095;
     padding          : 40px 20px 40px 20px;
-    
-    
   }
-  .map_component .search_component h2{
+  ::-webkit-input-placeholder { color:white; }
+  ::-moz-placeholder { color:white; } /* firefox 19+ */
+  :-ms-input-placeholder { color:white } /* ie */
+  input:-moz-placeholder { color:white; }
+  .map_component .search_component .input{
     font-family       : HelveticaNeue;
+    font-size: 24px;
     font-weight       : 100;
-    text-align        : center;
+    color: white;
+    outline: none;
+    width: 620px;
+    text-align        : left;
     display           : table;
     padding-left      : 60px;
     margin            : 0 auto;
     background        : url('./../images/search-fullsize.png');
     background-repeat : no-repeat;
+    border: none;
   }
   .copyright_component{
     margin: 0px;
@@ -672,11 +679,39 @@ li.p{
     background-color : #5d5095;
     padding          : 80px 20px 80px 20px;
   }
-  .map_component .search_component h2{
+  .popup_menu{
+    background-color: white;
+    color: #576770;
+    padding: 30px 30px 30px 60px;
+   
+  }
+  .popup_menu .name{
+    margin-top: 20px ;
+    font-size: 50px;
+    padding-left: 60px;
+    background: url('./../images/option-1.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 10px; 
+    margin: 0 auto;
+  }
+  .popup_menu .value{
+    font-family: HelveticaNeue;
+    font-size: 30px;
+    padding-left: 60px;
+    padding-right: 30px;
+  }
+  .map_component .search_component .input{
     font-family       : HelveticaNeue;
     font-weight       : 100;
     font-size         : 50px;
-    margin            : 0px 30px;
+    margin            : 0 auto;
+    width: 620px;
+    color: white;
+    outline: none;
+    lighting-color: white;
+    border: none;
+    background-color: #5d5095;
     background        : url('./../images/search-mobile.png');
     background-repeat : no-repeat;
     padding-left      : 100px;
