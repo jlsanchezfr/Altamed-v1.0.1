@@ -672,6 +672,8 @@ li.p{
     font-size     : 110px;
     font-weight   : 100;
     margin-bottom : 20px;
+    padding-right: 100px;
+    padding-left: 100px;
   }
   .text_component_block h2{
     font-size   : 100px;
