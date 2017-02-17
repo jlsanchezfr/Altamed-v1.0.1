@@ -594,7 +594,7 @@ li.p{
     background-repeat   : no-repeat;
     background-position : top;
     display             : table;
-    height              : 220px;
+    height              : 160px;
   }
   li{
     list-style: none;
@@ -610,6 +610,7 @@ li.p{
 }
   .header_component{
     padding-left: 30px;
+    padding-top: 50px;
   }
   .paragraph-block{
     display          : block;
