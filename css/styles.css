@@ -81,7 +81,7 @@ body{
 .title_component{
   background          : url("./../images/logo.png");
   width               : 400px;
-  background-size     : 90%;
+  background-size     : 100%;
   background-repeat   : no-repeat;
   background-position : left;
   display             : table;
@@ -174,7 +174,7 @@ body{
 }
 .info_component h2{
   font-size   : 40px;
-  font-family : HelveticaNeue;
+  font-family : HelveticaNeue-Bold;
   margin      : 0 auto;
   text-align  : left;
 }
@@ -932,3 +932,8 @@ li.p{
 }
 
 
+
+.content-principal-2 ul{
+    margin-top: 60px;
+
+}
