@@ -404,6 +404,9 @@ li.p{
     width: 100%;
     display: table;
     margin-top: 50px;
+    border-top-style : solid;
+    border-top-color : lightgrey;
+    border-top-width : 3px;
   }
   .tab_menu a{
     color: #576770;
